@@ -6,8 +6,8 @@
     <groupId>com.org.archi.grpc</groupId>
     <artifactId>grpc-billing-proto</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>grpc-billing</name>
-    <description>Billing service</description>
+    <name>grpc-billing-contract</name>
+    <description>Billing service contract</description>
 
 
     <properties>
