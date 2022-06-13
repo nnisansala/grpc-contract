@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+package com.org.archi.billing.grpc.services;
+
+message Product {
+  string productCode = 1;
+  double unitPrice = 2;
+  int32 noOfItems = 3;
+}
+
+message BillingDetails {
+  double billingAmount = 1;
+  double tax = 2;
+  double totalAmount = 3;
+}
+
+
+service BillingService {
+  rpc calculate(stream Product) returns (BillingDetails);
+}
